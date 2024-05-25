@@ -1,9 +1,13 @@
 import React from 'react'
+import Navbar from './components/Navbar/Navbar'
 
 const App = () => {
   return (
     <>
-      <h2>Welcome to Office Launch System</h2>
+      <div className="app">
+
+        <Navbar />
+      </div>
     </>
   )
 }
