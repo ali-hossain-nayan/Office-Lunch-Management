@@ -44,6 +44,8 @@ import food_29 from './food_29.png'
 import food_30 from './food_30.png'
 import food_31 from './food_31.png'
 import food_32 from './food_32.png'
+import add_icon_green from './add_icon_green.png'
+import remove_icon_red from './remove_icon_red.png'
 
 export const assets = {
     logo,
@@ -60,6 +62,8 @@ export const assets = {
     menu_4,
     menu_5,
     menu_6,
+    add_icon_green,
+    remove_icon_red
 }
 export const menu_list = [
     {
