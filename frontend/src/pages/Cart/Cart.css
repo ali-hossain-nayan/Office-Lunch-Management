@@ -1,0 +1,21 @@
+.choose{
+    margin-top: 100px;
+}
+.choose-items-title{
+    display: grid;
+    grid-template-columns:  1fr 1.5fr 1fr 1fr;
+    align-items: center;
+    color: gray;
+    font-size: max(1vw,13px);
+}
+.choose-items-item{
+    margin: 10px 0px;
+    color: black;
+}
+.choose-items-item img{
+    width: 60px;
+    /* gap: 2px; */
+}
+.choose-items-item .cross{
+    cursor: pointer;
+}
