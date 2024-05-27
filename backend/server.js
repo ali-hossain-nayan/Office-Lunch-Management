@@ -1,5 +1,11 @@
 import express from 'express'
 import cors from 'cors'
+import { connectDB } from './config/db.js'
+
+
+//pass: 01690205129
+// username: AliNayan123
+// mongodb+srv://AliNayan123:01690205129@cluster0.jgvumox.mongodb.net/?
 
 //app config
 
@@ -10,6 +16,9 @@ const port = 4000
 //middleware
 app.use(express.json())
 app.use(cors())
+
+//database connection
+connectDB()
 
 app.get('/',(req,res)=>{
     res.send('API is Working..')
