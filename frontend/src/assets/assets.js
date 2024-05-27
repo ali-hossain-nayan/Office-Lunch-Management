@@ -46,8 +46,14 @@ import food_31 from './food_31.png'
 import food_32 from './food_32.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
+import facebook_icon from './facebook_icon.png'
+import twitter_icon from './twitter_icon.png'
+import linkedin_icon from './linkedin_icon.png'
 
 export const assets = {
+    facebook_icon,
+    linkedin_icon,
+    twitter_icon,
     logo,
     add_icon,
     order_icon,
