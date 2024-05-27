@@ -49,8 +49,10 @@ import remove_icon_red from './remove_icon_red.png'
 import facebook_icon from './facebook_icon.png'
 import twitter_icon from './twitter_icon.png'
 import linkedin_icon from './linkedin_icon.png'
+import cross_icon from './cross_icon.png'
 
 export const assets = {
+    cross_icon,
     facebook_icon,
     linkedin_icon,
     twitter_icon,
