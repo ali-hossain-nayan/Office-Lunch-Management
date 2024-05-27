@@ -132,14 +132,14 @@ export const food_list = [
         name: 'salad',
         image: food_6,
         description: 'Food provides essential nutrients for overall wll-being',
-        category: 'salad'
+        category: 'Rolls'
     },
     {
         _id: '7',
         name: 'sorma',
         image: food_7,
         description: 'Food provides essential nutrients for overall wll-being',
-        category: 'salad'
+        category: 'Rolls'
     },
     {
         _id: '8',
@@ -153,21 +153,21 @@ export const food_list = [
         name: 'panir',
         image: food_9,
         description: 'Food provides essential nutrients for overall wll-being',
-        category: 'salad'
+        category: 'sweet'
     },
     {
         _id: '10',
         name: 'sweet',
         image: food_10,
         description: 'Food provides essential nutrients for overall wll-being',
-        category: 'salad'
+        category: 'sweet'
     },
     {
         _id: '11',
         name: 'stobery juice',
         image: food_11,
         description: 'Food provides essential nutrients for overall wll-being',
-        category: 'salad'
+        category: 'Rolls'
     },
     {
         _id: '12',
@@ -181,7 +181,7 @@ export const food_list = [
         name: 'sandwich',
         image: food_13,
         description: 'Food provides essential nutrients for overall wll-being',
-        category: 'salad'
+        category: 'Sandwich'
     },
     {
         _id: '14',
@@ -195,7 +195,7 @@ export const food_list = [
         name: 'beef sandwich',
         image: food_15,
         description: 'Food provides essential nutrients for overall wll-being',
-        category: 'salad'
+        category: 'Sandwich'
     },
     {
         _id: '16',
