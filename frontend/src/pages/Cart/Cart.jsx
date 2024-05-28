@@ -4,7 +4,7 @@ import { StoreContext } from '../../context/contextStore'
 
 const Cart = () => {
 
-  const { chooseItems, removeChooseItem, food_list } = useContext(StoreContext)
+  const { chooseItems, removeChooseItem, food_list, url } = useContext(StoreContext)
 
   return (
     <div className="choose">
@@ -22,10 +22,10 @@ const Cart = () => {
             if (chooseItems[item._id] > 0) {
               return (
                 <div className="choose-items-title choose-items-item">
-                  <img src={item.image} alt="item-image" />
+                  <img src={url + "/images/" + item.image} alt="item-image" />
                   <p>{item.name}</p>
                   <p>{chooseItems[item._id]}</p>
-                  <p onClick={()=>removeChooseItem(item._id)} className='cross'>x</p>
+                  <p onClick={() => removeChooseItem(item._id)} className='cross'>x</p>
                 </div>
               )
             }
