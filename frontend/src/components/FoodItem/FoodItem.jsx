@@ -4,12 +4,12 @@ import { assets } from '../../assets/assets'
 import { StoreContext } from '../../context/contextStore'
 const FoodItem = ({ id, name, description, image }) => {
 
-    const { chooseItems, addChoose, removeChooseItem } = useContext(StoreContext)
+    const { chooseItems, addChoose, removeChooseItem, url } = useContext(StoreContext)
 
     return (
         <div className='food-item'>
             <div className="food-item-img-container">
-                <img src={image} alt="" className="food-item-image" />
+                <img src={url + "/images/" + image} alt="" className="food-item-image" />
                 {
                     !chooseItems[id] ?
                         <img className='add' onClick={() => addChoose(id)} src={assets.add_icon} />

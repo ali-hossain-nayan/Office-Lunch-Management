@@ -2,8 +2,24 @@ import React, { useState } from 'react'
 import { assets } from '../../assets/assets'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { StoreContext } from '../../context/contextStore'
+import { Profiler } from 'react'
+import { useNavigate } from 'react-router-dom';
 const Navbar = ({ setLogin }) => {
+
+
     const [menu, setMenu] = useState('Home')
+    const { token, setToken } = useContext(StoreContext);
+    const navigate = useNavigate();
+    const logout =()=>{
+        localStorage.removeItem("token");
+        setToken("");
+        navigate("/")
+
+    }
+
+
     return (
         <div className='navbar'>
             <Link to='/'>
@@ -21,7 +37,18 @@ const Navbar = ({ setLogin }) => {
                     </Link>
                     <div className="dot"></div>
                 </div>
-                <button onClick={() => setLogin(true)}>Sign in</button>
+                {!token ? <button onClick={() => setLogin(true)}>Sign in</button>
+                    : <div className='navbar-profile'>
+                        <img src={assets.profile_icon} alt="profile" />
+                        <ul className="nav-profile-dropdown">
+                            <li><img src={assets.bag_icon} alt="" /><p>Choose Menu</p></li>
+                            <hr />
+                            <li onClick={logout}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
+                        </ul>
+
+                    </div>
+                }
+
             </div>
         </div>
     )

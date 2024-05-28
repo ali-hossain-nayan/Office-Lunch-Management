@@ -50,6 +50,9 @@ import facebook_icon from './facebook_icon.png'
 import twitter_icon from './twitter_icon.png'
 import linkedin_icon from './linkedin_icon.png'
 import cross_icon from './cross_icon.png'
+import logout_icon from './logout_icon.png'
+import bag_icon from './bag_icon.png'
+import profile_icon from './profile_icon.png'
 
 export const assets = {
     cross_icon,
@@ -71,7 +74,10 @@ export const assets = {
     menu_5,
     menu_6,
     add_icon_green,
-    remove_icon_red
+    remove_icon_red,
+    logout_icon,
+    bag_icon,
+    profile_icon
 }
 export const menu_list = [
     {
