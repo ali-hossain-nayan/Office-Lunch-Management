@@ -17,7 +17,7 @@ const Sidebar = () => {
                 </NavLink>
                 <NavLink to='/view' className="sidebar-option">
                     <img src={assets.add_icon} alt="add-icon" />
-                    <p>View Menu</p>
+                    <p>View Chosen Menu</p>
                 </NavLink>
             </div>
         </div>
