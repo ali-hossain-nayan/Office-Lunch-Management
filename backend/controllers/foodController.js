@@ -45,4 +45,15 @@ const removeFood = async (req, res) => {
     }
 }
 
-export { addFood, listFood, removeFood }
+//View Employee choosen Menu
+const viewMenu = async (req, res) => {
+    try {
+        const chosenMenu = await foodModel.find({});
+        res.json({ success: true, data: chosenMenu });
+    } catch (error) {
+        console.log(error);
+        res.json({ success: false, message: "Error!!" })
+    }
+}
+
+export { addFood, listFood, removeFood, viewMenu }
