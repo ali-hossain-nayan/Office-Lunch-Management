@@ -4,6 +4,7 @@ import { connectDB } from './config/db.js'
 
 
 //pass: 01690205129
+
 // username: AliNayan123
 // mongodb+srv://AliNayan123:01690205129@cluster0.jgvumox.mongodb.net/?
 
@@ -20,10 +21,10 @@ app.use(cors())
 //database connection
 connectDB()
 
-app.get('/',(req,res)=>{
+app.get('/', (req, res) => {
     res.send('API is Working..')
 })
 
-app.listen(port,()=>{
+app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`)
 })
