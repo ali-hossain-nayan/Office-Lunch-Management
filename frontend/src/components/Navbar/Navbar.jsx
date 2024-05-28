@@ -12,7 +12,7 @@ const Navbar = ({ setLogin }) => {
     const [menu, setMenu] = useState('Home')
     const { token, setToken } = useContext(StoreContext);
     const navigate = useNavigate();
-    const logout =()=>{
+    const logout = () => {
         localStorage.removeItem("token");
         setToken("");
         navigate("/")
@@ -30,7 +30,6 @@ const Navbar = ({ setLogin }) => {
                 <a href='#explore-menu' onClick={() => { setMenu('Menu') }} className={menu === 'Menu' ? 'active' : ''}>Menu</a>
             </ul>
             <div className="navbar-right">
-                <img src={assets.search_icon} alt="search" />
                 <div className="navbar-search-icon">
                     <Link to='/cart'>
                         <img src={assets.basket_icon} alt="basket" />
@@ -41,8 +40,6 @@ const Navbar = ({ setLogin }) => {
                     : <div className='navbar-profile'>
                         <img src={assets.profile_icon} alt="profile" />
                         <ul className="nav-profile-dropdown">
-                            <li><img src={assets.bag_icon} alt="" /><p>Choose Menu</p></li>
-                            <hr />
                             <li onClick={logout}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
                         </ul>
 
